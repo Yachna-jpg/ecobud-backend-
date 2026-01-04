@@ -15,7 +15,12 @@ const googleLogin = async (req, res) => {
         role: req.user.role,
         points: req.user.points,
         badges: req.user.badges,
-        message: "Firebase Login Successful"
+        message: "Login successful",
+  token,
+  user: {
+    id: user._id,
+    email: user.email}
+
     });
 };
 
